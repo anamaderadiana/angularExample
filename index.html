@@ -6,12 +6,20 @@
     
 <body ng-controller="MyController">
 
-<h1>AngularJS example</h1>
-<p>{{message}}</p>
+    <h1>AngularJS example</h1>
+    
+    <input ng-model="name" placeholder="Name">
+    <input ng-model="age" placeholder="Age">
+    <button ng-show="isFilled()" ng-click="addPerson()">Add</button>
+    
+    <p>{{message}}</p>
+    <ul>
+        <li ng-repeat="person in people">{{person.name}} is {{person.age}}
+        </li>
+    </ul>
 
-<script src="angular.min.js"></script>
-<script src="app.js"></script>
-
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
 
 </body>
 </html>
