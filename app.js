@@ -37,4 +37,13 @@ myApp.controller('MyController', function($scope){
         return $scope.name.length > 0 && $scope.age.length > 0;
     
     };
+    
+    $scope.buttonClass = function () {
+        
+        if ($scope.isFilled()){
+            return "enabled";
+        } else {
+            return "disabled";
+        }
+    };
 });

@@ -1,0 +1,9 @@
+.enabled {
+    color: white;
+    background-color: #ff903f;
+}
+
+.disabled {
+    color: white;
+    background-color: #d95c00;
+}
